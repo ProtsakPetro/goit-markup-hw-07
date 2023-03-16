@@ -1,0 +1,276 @@
+/****** ЗМІННІ ******/
+:root {
+    --main-text-color: #2e2f42;
+    --background-color-blue: #2e2f42;
+    --background-color-navy-white: #fff;
+    --second-text-color: #434455;
+    --hero-btn-color: #4d5ae5;
+    --hero-text-color: #fff;
+    --logo-text-white: #fff;
+    --logo-text-blue: #4d5ae5;
+    --logo-text-black: #2e2f42;
+    --background-color-section-four: #f4f4fd;
+    --color-filter: #404bbf;
+    --filter-text-white: #fff;
+    --filter-text-blue: #4d5ae5;
+    --filter-background-color: #f4f4fd;
+}
+/************?загальні стилі?***********/
+body {
+    font-family: "Roboto", sans-serif;
+
+    color: var(--main-text-color);
+    background-color: var(--background-color-navy-white);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.btn {
+    cursor: pointer;
+}
+.hover-active:hover,
+.hover-active:focus {
+    color: var(--color-filter);
+}
+/********** HEADER **********/
+.logo {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--logo-text-blue);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.logo-black {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--logo-text-blue);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-text-black);
+}
+.studio-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.portfolio-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.contacts-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.address {
+    font-family: inherit;
+    font-style: normal;
+    color: var(--main-text-color);
+}
+.address-mail {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.address-phone {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* ******HERO******* */
+.hero {
+    background-color: var(--background-color-blue);
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hero-text-color);
+}
+.hero-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+}
+/******!SECTION TWO *****/
+.feauter-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+/* ****section three*** */
+.product-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+/* ?section four */
+.team {
+    background-color: var(--background-color-section-four);
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.5x;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+}
+/**footer**/
+.footer {
+    background-color: var(--background-color-blue);
+}
+.logo {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--logo-text-blue);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.logo-white {
+    font-family: "Raleway";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--logo-text-blue);
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-text-white);
+}
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--logo-text-white);
+}
+/* !page two! */
+/* *filter* */
+.btn-all {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    width: 69px;
+    height: 48px;
+    background: var(--);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: var(--filter-text-blue);
+}
+.btn-web {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 116px;
+    height: 48px;
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: var(--filter-text-blue);
+}
+.btn-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 78px;
+    height: 48px;
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    color: var(--filter-text-blue);
+}
+.btn-design {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 101px;
+    height: 48px;
+    background: var(--filter-background-color);
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    color: var(--filter-text-blue);
+}
+.btn-marketing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 126px;
+    height: 48px;
+    background: var(--filter-background-color);
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    color: var(--filter-text-blue);
+}
+/* ?images list */
+.filter-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.filter-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
