@@ -9,6 +9,7 @@
     --text-hero: #ffffff;
     --background-color-darck: #2e2f42;
     --btn-color-light: #f4f4fd;
+    --background-section-four: #f4f4fd;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -113,6 +114,7 @@ ero-btn:active {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 .feauter-text {
     font-size: 16px;
@@ -129,10 +131,11 @@ ero-btn:active {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--text-color);
 }
 /* ?section four */
 .team {
-    background-color: var(--background-color-section-four);
+    background-color: var(--background-section-four);
 }
 .team-title {
     font-weight: 700;
@@ -141,6 +144,7 @@ ero-btn:active {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--text-color);
 }
 .team-subtitle {
     font-weight: 500;
@@ -148,6 +152,7 @@ ero-btn:active {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 .team-text {
     font-size: 16px;
@@ -156,9 +161,10 @@ ero-btn:active {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
-.product-item {
-    background-color: #ffffff;
+.team-item {
+    background-color: var(--background-color);
 }
+
 /**footer**/
 .footer {
     background-color: var(--background-color-darck);
