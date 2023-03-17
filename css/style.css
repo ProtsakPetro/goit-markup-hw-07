@@ -1,23 +1,9 @@
 :root {
-    --second-text-color: #2e2f42;
-    --background-color-blue: #2e2f42;
-    --background-color-navy-white: #fff;
     --main-text-color: #434455;
-    --hero-btn-color: #4d5ae5;
-    --hero-text-color: #fff;
-    --logo-text-white: #fff;
-    --logo-text-blue: #4d5ae5;
-    --logo-text-black: #2e2f42;
-    --background-color-section-four: #f4f4fd;
-    --color-filter: #404bbf;
-    --filter-text-white: #fff;
-    --filter-text-blue: #4d5ae5;
-    --filter-background-color: #f4f4fd;
 }
-/************?загальні стилі?***********/
 body {
     font-family: "Roboto", sans-serif;
-    color: #434455;
+    color: var(--main-text-color);
     background-color: var(--background-color-navy-white);
 }
 .list {
