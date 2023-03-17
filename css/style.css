@@ -1,9 +1,9 @@
 /****** ЗМІННІ ******/
 :root {
-    --main-text-color: #2e2f42;
+    --second-text-color: #2e2f42;
     --background-color-blue: #2e2f42;
     --background-color-navy-white: #fff;
-    --second-text-color: #434455;
+    --main-text-color: #434455;
     --hero-btn-color: #4d5ae5;
     --hero-text-color: #fff;
     --logo-text-white: #fff;
@@ -19,7 +19,7 @@
 body {
     font-family: "Roboto", sans-serif;
 
-    color: var(--main-text-color);
+    color: var(--second-text-color);
     background-color: var(--background-color-navy-white);
 }
 .list {
@@ -58,19 +58,7 @@ body {
     text-transform: uppercase;
     color: var(--logo-text-black);
 }
-.studio-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.portfolio-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.contacts-link {
+.menu-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
