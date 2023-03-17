@@ -5,6 +5,9 @@
     --background-color: #ffffff;
     --logo-color-dark: #000000;
     --logo-color: #4d5ae5;
+    --text-color-light: #f4f4fd;
+    --text-hero: #ffffff;
+    --background-color-darck: #2e2f42;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -31,10 +34,10 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    color: var(--logo-color);
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--logo-color);
 }
 .logo-black {
     font-family: "Raleway", sans-serif;
@@ -62,9 +65,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* ******HERO******* */
+/* ***************************************************HERO******* */
 .hero {
-    background-color: var(--background-color-blue);
+    background-color: var(--text-color);
 }
 .hero-title {
     font-weight: 700;
@@ -72,7 +75,7 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--hero-text-color);
+    color: var(--text-hero);
 }
 .hero-btn {
     font-family: "Roboto", sans-serif;
@@ -80,13 +83,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--text-hero);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
-    background-color: #4d5ae5;
+    background-color: var(--logo-color);
 }
 .hero-btn:hover,
 ero-btn:active {
@@ -95,13 +98,13 @@ ero-btn:active {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--text-hero);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
-    background-color: #404bbf;
+    background-color: var(--logo-color);
 }
 /******!SECTION TWO *****/
 .section-two-title {
@@ -157,34 +160,23 @@ ero-btn:active {
 }
 /**footer**/
 .footer {
-    background-color: var(--background-color-blue);
-}
-.logo {
-    font-family: "Raleway";
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.7;
-    color: var(--logo-text-blue);
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    background-color: var(--background-color-darck);
 }
 .logo-white {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.7;
-    color: var(--logo-text-blue);
+    line-height: 1.17;
+    color: var(--text-color-light);
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-text-white);
 }
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--logo-text-white);
+    color: #f4f4fd;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
