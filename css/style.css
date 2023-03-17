@@ -18,8 +18,7 @@
 /************?загальні стилі?***********/
 body {
     font-family: "Roboto", sans-serif;
-
-    color: var(--second-text-color);
+    color: #434455;
     background-color: var(--background-color-navy-white);
 }
 .list {
@@ -41,7 +40,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.17;
     color: var(--logo-text-blue);
     align-items: center;
     letter-spacing: 0.03em;
@@ -51,7 +50,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.17;
     color: var(--logo-text-blue);
     align-items: center;
     letter-spacing: 0.03em;
@@ -69,12 +68,7 @@ body {
     font-style: normal;
     color: var(--main-text-color);
 }
-.address-mail {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.address-phone {
+.contacts {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -92,19 +86,48 @@ body {
     color: var(--hero-text-color);
 }
 .hero-btn {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
+    background-color: #4d5ae5;
+}
+.hero-btn:hover,
+ero-btn:active {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    background-color: #404bbf;
 }
 /******!SECTION TWO *****/
+.section-two-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
 .feauter-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--second-text-color);
+    color: var(--main-text-color);
 }
+
 /* ****section three*** */
 .product-title {
     font-weight: 700;
@@ -135,10 +158,13 @@ body {
 }
 .team-text {
     font-size: 16px;
-    line-height: 1.5x;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--second-text-color);
+    color: var(--main-text-color);
+}
+.product-item {
+    background-color: #ffffff;
 }
 /**footer**/
 .footer {
@@ -171,9 +197,15 @@ body {
     letter-spacing: 0.02em;
     color: var(--logo-text-white);
 }
-/* !page two! */
+/* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
 .btn-all {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #f4f4fd;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -187,6 +219,12 @@ body {
     color: var(--filter-text-blue);
 }
 .btn-web {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #f4f4fd;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -203,6 +241,14 @@ body {
     color: var(--filter-text-blue);
 }
 .btn-app {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    background-color: #f4f4fd;
+    font-family: "Roboto", sans-serif;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -219,6 +265,12 @@ body {
     color: var(--filter-text-blue);
 }
 .btn-design {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #f4f4fd;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -235,6 +287,14 @@ body {
     color: var(--filter-text-blue);
 }
 .btn-marketing {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    background-color: #f4f4fd;
+    font-family: "Roboto", sans-serif;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
