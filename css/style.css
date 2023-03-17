@@ -8,6 +8,7 @@
     --text-color-light: #f4f4fd;
     --text-hero: #ffffff;
     --background-color-darck: #2e2f42;
+    --btn-color-light: #f4f4fd;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -180,13 +181,13 @@ ero-btn:active {
 }
 /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
-.btn-all {
+.btn-filter {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #f4f4fd;
+    background-color: var(--btn-color-light);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -197,15 +198,17 @@ ero-btn:active {
     flex: none;
     order: 0;
     flex-grow: 0;
-    color: var(--filter-text-blue);
+    color: var(--logo-color);
+    border: none;
 }
-.btn-web {
+.btn-filter:hover,
+.btn-filter:active {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    background-color: #f4f4fd;
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -213,83 +216,12 @@ ero-btn:active {
     padding: 12px 24px;
     width: 116px;
     height: 48px;
-    background: #f4f4fd;
     border: 1px solid #e7e9fc;
     border-radius: 4px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    color: var(--filter-text-blue);
-}
-.btn-app {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-
-    background-color: #f4f4fd;
-    font-family: "Roboto", sans-serif;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    width: 78px;
-    height: 48px;
-    background: #f4f4fd;
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    color: var(--filter-text-blue);
-}
-.btn-design {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background-color: #f4f4fd;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    width: 101px;
-    height: 48px;
-    background: var(--filter-background-color);
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    color: var(--filter-text-blue);
-}
-.btn-marketing {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-
-    background-color: #f4f4fd;
-    font-family: "Roboto", sans-serif;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    width: 126px;
-    height: 48px;
-    background: var(--filter-background-color);
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-    color: var(--filter-text-blue);
+    color: var(--text-hero);
 }
 /* ?images list */
 .filter-title {
@@ -297,9 +229,11 @@ ero-btn:active {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 .filter-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
