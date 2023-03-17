@@ -69,6 +69,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 /* ***************************************************HERO******* */
 .hero {
@@ -97,13 +98,14 @@ body {
     background-color: var(--logo-color);
 }
 .hero-btn:hover,
-ero-btn:active {
+.hero-btn:active,
+.hero-btn:focus {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--accent-color);
+    color: var(--text-hero);
     display: flex;
     flex-direction: row;
     align-items: flex-start;
