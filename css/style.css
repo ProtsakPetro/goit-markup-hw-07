@@ -1,11 +1,12 @@
 :root {
     --main-text-color: #434455;
     --text-color: #2e2f42;
+    --background-color: #ffffff;
 }
 body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
-    background-color: var(--background-color-navy-white);
+    background-color: var(--background-color);
 }
 .list {
     list-style: none;
