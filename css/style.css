@@ -1,7 +1,10 @@
 :root {
+    --accent-color: #404bbf;
     --main-text-color: #434455;
     --text-color: #2e2f42;
     --background-color: #ffffff;
+    --logo-color-dark: #000000;
+    --logo-color: #4d5ae5;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -20,7 +23,7 @@ body {
 }
 .hover-active:hover,
 .hover-active:focus {
-    color: var(--color-filter);
+    color: var(--accent-color);
 }
 /********** HEADER **********/
 .logo {
@@ -28,7 +31,7 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    color: var(--logo-text-blue);
+    color: var(--logo-color);
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -38,11 +41,10 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    color: var(--logo-text-blue);
+    color: var(--logo-color-dark);
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--logo-text-black);
 }
 .menu-link {
     font-weight: 500;
