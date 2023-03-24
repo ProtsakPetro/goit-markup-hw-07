@@ -11,6 +11,25 @@
     --btn-color-light: #f4f4fd;
     --background-section-four: #f4f4fd;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img {
+    display: block;
+}
 body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
@@ -22,6 +41,18 @@ body {
 .link {
     text-decoration: none;
     color: inherit;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .btn {
     cursor: pointer;
@@ -83,7 +114,6 @@ body {
     background-color: var(--text-color);
 }
 .hero-title {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -137,7 +167,6 @@ body {
 
 /* ****section three*** */
 .product-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -150,7 +179,6 @@ body {
     background-color: var(--background-section-four);
 }
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -206,15 +234,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: var(--btn-color-light);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 12px 24px;
-    width: 69px;
-    height: 48px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     color: var(--logo-color);
     border: none;
 }
@@ -226,18 +245,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: var(--accent-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 24px;
-    width: 116px;
-    height: 48px;
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     color: var(--text-hero);
 }
 /* ?images list */
