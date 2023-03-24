@@ -26,11 +26,13 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 .container {
     width: 1158px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     padding-left: 15px;
     padding-right: 15px;
     /* background-color: aqua; */
@@ -70,6 +72,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    outline: 2px solid #e7e9fc;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -80,6 +83,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    margin-right: 76px;
 }
 .logo-black {
     font-family: "Raleway", sans-serif;
@@ -117,8 +121,22 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    padding-right: auto;
 }
-.navigate-list > .navigate-item {
+.navigate {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.navigate-list {
+    display: flex;
+    gap: 40px;
+}
+.adress-list {
+    display: flex;
+    gap: 40px;
+}
+.container-header {
     display: flex;
 }
 /* ***************************************************HERO******* */
@@ -134,8 +152,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-hero);
     width: 496px;
-    /* padding-left: ; */
-    margin: bottom 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .hero-btn {
     font-family: "Roboto", sans-serif;
@@ -149,6 +168,12 @@ body {
     padding-right: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 4px;
+    position: absolute;
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 436px;
 }
 .hero-btn:hover,
 .hero-btn:active,
@@ -177,11 +202,17 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    width: 264px;
+}
+.feauter-list {
+    display: flex;
+    gap: 24px;
 }
 /* ****section three*** */
-.product-list > .product-item {
+.product-list {
     display: flex;
     flex-basis: calc(100% / 3);
+    gap: 24px;
 }
 
 .product {
@@ -195,6 +226,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--text-color);
+    margin-bottom: 72px;
 }
 /* ?section four */
 .team {
@@ -209,6 +241,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--text-color);
+    margin-bottom: 72px;
 }
 .team-subtitle {
     font-weight: 500;
@@ -217,6 +250,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-bottom: 8px;
 }
 .team-text {
     font-size: 16px;
@@ -224,9 +258,18 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    margin-bottom: 32px;
 }
 .team-item {
     background-color: var(--background-color);
+}
+.team-list {
+    display: flex;
+    flex-basis: calc(100% / 4);
+    gap: 24px;
+}
+.team-picture {
+    margin-bottom: 32px;
 }
 
 /**footer**/
@@ -244,12 +287,14 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
@@ -266,6 +311,10 @@ body {
     background-color: var(--btn-color-light);
     color: var(--logo-color);
     border: none;
+    min-width:width: 69px;
+    padding: 12px 24px;
+    /* display:flex; */
+    
 }
 .btn-filter:hover,
 .btn-filter:focus {
@@ -276,9 +325,12 @@ body {
     letter-spacing: 0.04em;
     background-color: var(--accent-color);
     color: var(--text-hero);
+    padding: 12px 24px;
 }
 .portfolio-list {
     margin-bottom: 72px;
+    display: flex;
+    gap: 24px;
 }
 /* ?images list */
 .filter-title {
@@ -293,4 +345,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+}
+.picture-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+.picture-portfolio {
+    margin-bottom: 32px;
 }
