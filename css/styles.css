@@ -10,6 +10,7 @@
     --background-color-darck: #2e2f42;
     --btn-color-light: #f4f4fd;
     --background-section-four: #f4f4fd;
+    --line-color: #e7e9fc;
 }
 p,
 h1,
@@ -72,7 +73,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    outline: 2px solid #e7e9fc;
+    border-bottom: 1px solid var(--line-color);
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -139,7 +140,7 @@ body {
 .container-header {
     display: flex;
 }
-/* ***************************************************HERO******* */
+/* ***************************************************HERO******* ************************************/
 .hero {
     background-color: var(--text-color);
     padding-bottom: 188px;
@@ -169,7 +170,6 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 4px;
-    position: absolute;
     width: 169px;
     height: 56px;
     left: 636px;
@@ -185,6 +185,8 @@ body {
     letter-spacing: 0.04em;
     color: var(--text-hero);
     background-color: var(--accent-color);
+    display: block;
+    margin: 0 auto;
 }
 /******!SECTION TWO *****/
 .feature {
@@ -287,14 +289,14 @@ body {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 16px;
 }
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: var(--background-section-four);
     width: 264px;
+    margin-top: 16px;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
@@ -311,10 +313,8 @@ body {
     background-color: var(--btn-color-light);
     color: var(--logo-color);
     border: none;
-    min-width:width: 69px;
+    min-width: 69px;
     padding: 12px 24px;
-    /* display:flex; */
-    
 }
 .btn-filter:hover,
 .btn-filter:focus {
@@ -331,6 +331,7 @@ body {
     margin-bottom: 72px;
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 /* ?images list */
 .filter-title {
@@ -339,12 +340,19 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-bottom: 8px;
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 24px;
 }
 .filter-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 24px;
 }
 .picture-list {
     display: flex;
@@ -352,6 +360,13 @@ body {
     row-gap: 48px;
     column-gap: 24px;
 }
+.picture-item {
+    box-sizing: border-box;
+    /* border: 1px solid var(--line-color);  не поміщється в екран, ламає сітку*/
+    /* border-top: none; */
+    border-bottom: 1px solid var(--line-color);
+}
 .picture-portfolio {
-    margin-bottom: 32px;
+    width: 360px;
+    height: 300px;
 }
