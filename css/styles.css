@@ -198,6 +198,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-bottom: 8px;
 }
 .feauter-text {
     font-size: 16px;
@@ -260,7 +261,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 .team-item {
     background-color: var(--background-color);
@@ -341,18 +342,12 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-bottom: 8px;
-    margin-top: 32px;
-    padding-left: 16px;
-    padding-right: 24px;
 }
 .filter-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 24px;
 }
 .picture-list {
     display: flex;
@@ -361,12 +356,19 @@ body {
     column-gap: 24px;
 }
 .picture-item {
-    box-sizing: border-box;
-    /* border: 1px solid var(--line-color);  не поміщється в екран, ламає сітку*/
-    /* border-top: none; */
+    /* box-sizing: border-box; */
+
     border-bottom: 1px solid var(--line-color);
 }
 .picture-portfolio {
     width: 360px;
     height: 300px;
+}
+.portfolio-picture-text {
+    border: 1px solid var(--line-color);
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 52px;
 }
