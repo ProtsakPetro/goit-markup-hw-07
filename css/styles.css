@@ -5,12 +5,19 @@
     --background-color: #ffffff;
     --logo-color-dark: #000000;
     --logo-color: #4d5ae5;
-    --text-color-light: #f4f4fd;
+    --text-color-light-cloud: #f4f4fd;
     --text-hero: #ffffff;
     --background-color-darck: #2e2f42;
-    --btn-color-light: #f4f4fd;
+    --btn-color-light--cloud: #f4f4fd;
     --background-section-four: #f4f4fd;
     --line-color: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --bg-gradient: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    );
+    --box-shadow-team: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 p,
 h1,
@@ -142,6 +149,12 @@ body {
 }
 /* ***************************************************HERO******* ************************************/
 .hero {
+    background-image: var(--bg-gradient),
+        url(../images/background-image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 1440px;
     background-color: var(--text-color);
     padding-bottom: 188px;
     padding-top: 188px;
@@ -261,10 +274,12 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    padding-bottom: 32px;
+    margin-bottom: 8px;
 }
 .team-item {
     background-color: var(--background-color);
+    box-shadow: var(--box-shadow-team);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list {
     display: flex;
@@ -273,6 +288,30 @@ body {
 }
 .team-picture {
     margin-bottom: 32px;
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 32px;
+}
+.team-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-soc-link {
+    fill: var(--background-color);
+}
+.team-item-wrap {
 }
 
 /**footer**/
