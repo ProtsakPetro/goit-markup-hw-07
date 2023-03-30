@@ -76,6 +76,19 @@ body {
 .hover-active:focus {
     color: var(--accent-color);
 }
+.menu-link {
+    display: flex;
+    justify-content: end;
+    align-items: ;
+}
+/* .menu-link:hover::after,
+.menu-link:focus::after {
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: var(--accent-color);
+    justify-content: ; }*/
+
 /********** HEADER **********/
 .header {
     padding-top: 24px;
@@ -203,7 +216,6 @@ body {
 }
 /******!SECTION TWO *****/
 .feature {
-    padding-top: 112px;
 }
 .second-title {
     font-weight: 500;
@@ -221,8 +233,18 @@ body {
     width: 264px;
 }
 .feauter-list {
+    padding-top: 120px;
     display: flex;
     gap: 24px;
+}
+.feauter-soc-link {
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+    background-color: var(--color-cloud);
 }
 /* ****section three*** */
 .product-list {
@@ -308,15 +330,69 @@ body {
     justify-content: center;
     align-items: center;
 }
-.team-soc-link {
+.team-soc-icon {
     fill: var(--background-color);
+}
+.team-soc-link:hover,
+.team-soc-link:focus,
+.team-soc-link:active {
+    background-color: var(--accent-color);
 }
 .team-item-wrap {
 }
+/* **********section five customers******************* */
+.customers-item-wrap {
+}
+.customers-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin-bottom: 72px;
+}
+.customers {
+    padding-top: 120px;
+}
+.customers-list {
+    display: flex;
 
+    gap: 24px;
+    padding-bottom: 120px;
+}
+.customers-item {
+}
+.customers-link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 168px;
+    height: 88px;
+    box-sizing: border-box;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+}
+.customers-icon {
+    fill: #8e8f99;
+}
+.customers-link:hover,
+.customers-link:focus,
+.customers-link:active {
+    border: 1px solid var(--accent-color);
+}
+.customers-icon:hover,
+.customers-icon:focus,
+.customers-icon:active {
+    fill: var(--accent-color);
+}
 /**footer**/
 .footer {
     background-color: var(--background-color-darck);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-logo-wrap {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -325,7 +401,7 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    color: var(--text-color-light);
+    color: var(--text-color-light-cloud);
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -337,6 +413,46 @@ body {
     color: var(--background-section-four);
     width: 264px;
     margin-top: 16px;
+}
+
+.footer-item-wrap {
+}
+.footer-text-soc {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-hero);
+    margin-bottom: 16px;
+}
+.footer-soc-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--logo-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus,
+.footer-soc-link:active {
+    background-color: #31d0aa;
+}
+
+.footer-soc-icon {
+    fill: var(--background-color);
+}
+.footer-wrap {
+    display: flex;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
 /* *filter* */
@@ -394,16 +510,17 @@ body {
     row-gap: 48px;
     column-gap: 24px;
 }
-.picture-item {
-    /* box-sizing: border-box; */
-
-    border-bottom: 1px solid var(--line-color);
+.picture-portfolio :hover,
+.picture-portfolio :focus {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .picture-portfolio {
     width: 360px;
     height: 300px;
 }
-.portfolio-picture-text {
+.picture-portfolio .portfolio-picture-text {
     border: 1px solid var(--line-color);
     border-top: none;
     padding-top: 32px;
