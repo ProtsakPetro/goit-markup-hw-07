@@ -389,8 +389,6 @@ body {
 /**footer**/
 .footer {
     background-color: var(--background-color-darck);
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .footer-logo-wrap {
     padding-top: 100px;
@@ -416,6 +414,8 @@ body {
 }
 
 .footer-item-wrap {
+    padding-top: 100px;
+    padding-bottom: 132px;
 }
 .footer-text-soc {
     font-family: "Roboto";
@@ -447,7 +447,11 @@ body {
 .footer-soc-link:active {
     background-color: #31d0aa;
 }
-
+.container-logo {
+    margin-right: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .footer-soc-icon {
     fill: var(--background-color);
 }
