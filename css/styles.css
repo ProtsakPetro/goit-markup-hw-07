@@ -212,8 +212,6 @@ body {
     margin: 0 auto;
 }
 /******!SECTION TWO *****/
-.feature {
-}
 .second-title {
     font-weight: 500;
     font-size: 20px;
@@ -335,11 +333,7 @@ body {
 .team-soc-link:active {
     background-color: var(--accent-color);
 }
-.team-item-wrap {
-}
 /* **********section five customers******************* */
-.customers-item-wrap {
-}
 .customers-title {
     font-size: 36px;
     line-height: 1.11;
