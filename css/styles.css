@@ -240,6 +240,7 @@ body {
     display: flex;
     margin-bottom: 8px;
     background-color: var(--color-cloud);
+    border-radius: 4px;
 }
 /* ****section three*** */
 .product-list {
@@ -370,9 +371,10 @@ body {
 .customers-icon {
     fill: currentColor;
 }
+
 .customers-link:hover,
-.customers-link :focus,
-.customers-link :active {
+.customers-link:focus,
+.customers-link:active {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
