@@ -24,7 +24,7 @@
         <header class="header">
             <div class="container container-header">
                 <nav class="navigate">
-                    <a class="logo link hover-active link" href="./index.html"
+                    <a class="logo link hover-active" href="./index.html"
                         >Web<span class="logo-black hover-active"
                             >Studio</span
                         ></a
@@ -32,7 +32,7 @@
                     <ul class="navigate-list list">
                         <li class="navigate-item item">
                             <a
-                                class="menu-link link hover-active"
+                                class="menu-link link hover-active active-page"
                                 href="./index.html"
                                 >Studio</a
                             >
@@ -78,7 +78,11 @@
                     <h1 class="hero-title">
                         Effective Solutions for Your Business
                     </h1>
-                    <button class="hero-btn text-btn btn" type="button">
+                    <button
+                        class="hero-btn text-btn btn"
+                        type="button"
+                        data-modal-open
+                    >
                         Order Service
                     </button>
                 </div>
@@ -614,5 +618,21 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button
+                    type="button"
+                    class="modal-close-button btn"
+                    data-modal-close
+                >
+                    <svg class="modal-close-butto-icon" width="8" height="8">
+                        <use
+                            href="./images/icons.svg#icon-close-modal-black"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
