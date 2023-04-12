@@ -734,6 +734,8 @@ body {
     border-radius: 4px;
     padding-left: 38px;
     margin-bottom: 8px;
+    background-color: var(--modal-color);
+
     transition: border-color var(--transition-time-cubic);
 }
 
@@ -747,6 +749,7 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     margin-bottom: 16px;
+    background-color: var(--modal-color);
 }
 .modal-form-input-desc {
     font-family: "Roboto";
