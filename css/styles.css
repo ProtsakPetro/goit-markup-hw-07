@@ -12,6 +12,7 @@
     --line-color: #e7e9fc;
     --color-cloud: #f4f4fd;
     --modal-color: #fcfcfc;
+    --color-form-text: #8e8f99;
     --bg-gradient: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -202,6 +203,7 @@ body {
     height: 56px;
     left: 636px;
     top: 436px;
+    border: none;
     transition: background-color var(--transition-time-cubic);
 }
 .hero-btn:hover,
@@ -393,11 +395,10 @@ body {
 /**footer**/
 .footer {
     background-color: var(--background-color-darck);
-}
-.footer-logo-wrap {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 132px;
 }
+
 .logo-white {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -417,10 +418,6 @@ body {
     margin-top: 16px;
 }
 
-.footer-item-wrap {
-    padding-top: 100px;
-    padding-bottom: 132px;
-}
 .footer-text-soc {
     font-family: "Roboto";
     font-weight: 500;
@@ -454,8 +451,6 @@ body {
 }
 .container-logo {
     margin-right: 120px;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .footer-soc-icon {
     fill: var(--background-color);
@@ -467,9 +462,6 @@ body {
 /* ************************************************foter form */
 .footer-form-wrapper {
     margin-left: 80px;
-    padding-top: 100px;
-    padding-bottom: 132px;
-    padding-right: 159px;
 }
 .footer-form {
     display: flex;
@@ -516,6 +508,7 @@ body {
     height: 40px;
     background: var(--logo-color);
     border-radius: 4px;
+    border: none;
     padding-top: 8px;
     padding-right: 24px;
     padding-bottom: 8px;
@@ -733,15 +726,16 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
-    margin-bottom: 8px;
     background-color: var(--modal-color);
-
     transition: border-color var(--transition-time-cubic);
 }
 
 .modal-form-input:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+.modal-form-field {
+    margin-bottom: 8px;
 }
 
 .modal-form-message {
@@ -752,11 +746,13 @@ body {
     background-color: var(--modal-color);
 }
 .modal-form-input-desc {
+    display: flex;
     font-family: "Roboto";
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;
+    color: var(--color-form-text);
+    margin-bottom: 4px;
 }
 .modal-form-check-desc {
     display: flex;
@@ -764,7 +760,7 @@ body {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;
+    color: var(--color-form-text);
     margin-bottom: 24px;
 }
 .modal-form-message {
@@ -795,6 +791,7 @@ body {
     color: var(--text-hero);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     width: 169px;
     height: 56px;
     align-self: center;
@@ -858,6 +855,8 @@ body {
     border-color: var(--accent-color);
     outline: none;
 }
-
+.privacy-policy {
+    color: var(--logo-color);
+}
 .modal-form-check {
 }
