@@ -18,13 +18,14 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/media.css" />
         <title>WebStudio</title>
     </head>
     <body class="body">
-        <header class="header">
+        <header class="header container">
             <div class="container container-header">
                 <nav class="navigate">
-                    <a class="logo link hover-active" href="./index.html"
+                    <a class="logo-header link hover-active" href="./index.html"
                         >Web<span class="logo-black hover-active"
                             >Studio</span
                         ></a
@@ -51,6 +52,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button data-mobile-open type="button" class="mobile-menu-open">
+                    <svg class="mobile-menu-open-icon" width="32" height="22">
+                        <use href="./images/icons.svg#icon-hamburger"></use>
+                    </svg>
+                </button>
                 <address class="address">
                     <ul class="adress-list list">
                         <li class="contacts item hover-active">
@@ -71,6 +77,94 @@
                 </address>
             </div>
         </header>
+        <!-- !mobile menu -->
+        <div class="mobile-menu is-hidden" data-mobile>
+            <button data-mobile-close type="button" class="mobile-menu-btn">
+                <svg class="mobile-close-butto-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-modal-black"></use>
+                </svg>
+            </button>
+            <div class="mobile-nav">
+                <nav class="navigate-mobile">
+                    <ul class="mobile-list list">
+                        <li class="mobile-item item">
+                            <a
+                                class="mobile-link link hover-active"
+                                href="./index.html"
+                                >Studio</a
+                            >
+                        </li>
+                        <li class="mobile-item item">
+                            <a
+                                class="mobile-link link hover-active"
+                                href="./index.html"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li class="mobile-item item">
+                            <a
+                                class="mobile-link link hover-active accent"
+                                href="./index.html"
+                                >Contacts</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-adress-soc">
+                <ul class="mobile-adress-list list">
+                    <li class="mobile-contacts item">
+                        <a
+                            class="mobile-address-link phone link"
+                            href="tel:+110001111111"
+                            >+11 (000) 111-11-11</a
+                        >
+                    </li>
+                    <li class="mobile-contacts item">
+                        <a
+                            class="mobile-address-link mail link hover-active"
+                            href="mailto:info@devstudio.com"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                </ul>
+                <ul class="mobile-team-soc-list list">
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link"
+                            ><svg class="team-soc-icon" Width="16" Height="16">
+                                <use
+                                    href="./images/icons.svg#icon-instagram"
+                                ></use></svg
+                        ></a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link"
+                            ><svg class="team-soc-icon" Width="16" Height="16">
+                                <use
+                                    href="./images/icons.svg#icon-twitter"
+                                ></use></svg
+                        ></a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link"
+                            ><svg class="team-soc-icon" Width="16" Height="16">
+                                <use
+                                    href="./images/icons.svg#icon-facebook"
+                                ></use></svg
+                        ></a>
+                    </li>
+                    <li class="team-soc-item">
+                        <a href="" class="team-soc-link link"
+                            ><svg class="team-soc-icon" Width="16" Height="16">
+                                <use
+                                    href="./images/icons.svg#icon-linkedin"
+                                ></use></svg
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- !mobile menu -->
         <main class="main">
             <!-- hero -->
             <section class="hero">
@@ -180,6 +274,7 @@
                                     class="product-picture"
                                     src="./images/computer.jpg"
                                     alt="computer screen with website"
+                                    srcset="./images/computer_2x.jpg 2x"
                                     width="360"
                                     height="300"
                                 />
@@ -189,6 +284,7 @@
                                     class="product-picture"
                                     src="./images/phone.jpg"
                                     alt="phone screen with website"
+                                    srcset="./images/phone_2x.png 2x"
                                     width="360"
                                     height="300"
                                 />
@@ -198,6 +294,9 @@
                                     class="product-picture"
                                     src="./images/phon_and_computer.jpg"
                                     alt="comruter and phone screen with website"
+                                    srcset="
+                                        ./images/phon_and_computer_2x.jpg 2x
+                                    "
                                     width="360"
                                     height="300"
                                 />
@@ -216,6 +315,7 @@
                                 class="team-picture"
                                 src="./images/mark_guerrero.jpg"
                                 alt="photo mark guerro"
+                                srcset="./images/mark_guerrero-2x.jpg 2x"
                                 width="264"
                                 height="260"
                             />
@@ -279,6 +379,7 @@
                                 class="team-picture"
                                 src="./images/tom_ford.jpg"
                                 alt="photo tom ford"
+                                srcset="./images/tom_ford-2x.jpg 2x"
                                 width="264"
                                 height="260"
                             />
@@ -342,6 +443,7 @@
                                 class="team-picture"
                                 src="./images/camila_garcia.jpg"
                                 alt="photo camila garcia"
+                                srcset="./images/camila_garcia-2x.jpg 2x"
                                 width="264"
                                 height="260"
                             />
@@ -405,6 +507,7 @@
                                 class="team-picture"
                                 src="./images/daniel_wilson.jpg"
                                 alt="photo daniel wilson"
+                                srcset="./images/daniel_wilson-2x.jpg 2x"
                                 width="264"
                                 height="260"
                             />
@@ -552,69 +655,73 @@
         <!-- footer -->
         <footer class="footer">
             <div class="container footer-wrap">
-                <div class="container-logo">
-                    <a class="logo link hover-active" href="./index.html"
-                        >Web<span class="logo-white hover-active"
-                            >Studio</span
-                        ></a
-                    >
-                    <p class="footer-text">
-                        Increase the flow of customers and sales for your
-                        business with digital marketing & growth solutions.
-                    </p>
-                </div>
-                <div class="footer-item-wrap">
-                    <p class="footer-text-soc">Social media</p>
-                    <ul class="footer-soc-list list">
-                        <li class="footer-soc-item">
-                            <a href="" class="footer-soc-link link"
-                                ><svg
-                                    class="footer-soc-icon"
-                                    Width="24"
-                                    Height="24"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-instagram"
-                                    ></use></svg
-                            ></a>
-                        </li>
-                        <li class="footer-soc-item">
-                            <a href="" class="footer-soc-link link"
-                                ><svg
-                                    class="footer-soc-icon"
-                                    Width="24"
-                                    Height="24"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-twitter"
-                                    ></use></svg
-                            ></a>
-                        </li>
-                        <li class="footer-soc-item">
-                            <a href="" class="footer-soc-link link"
-                                ><svg
-                                    class="footer-soc-icon"
-                                    Width="24"
-                                    Height="24"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-facebook"
-                                    ></use></svg
-                            ></a>
-                        </li>
-                        <li class="footer-soc-item">
-                            <a href="" class="footer-soc-link link"
-                                ><svg
-                                    class="footer-soc-icon"
-                                    Width="24"
-                                    Height="24"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-linkedin"
-                                    ></use></svg
-                            ></a>
-                        </li>
-                    </ul>
+                <div class="wraper-tab">
+                    <div class="container-logo">
+                        <a
+                            class="logo-footer link hover-active"
+                            href="./index.html"
+                            >Web<span class="logo-white hover-active"
+                                >Studio</span
+                            ></a
+                        >
+                        <p class="footer-text">
+                            Increase the flow of customers and sales for your
+                            business with digital marketing & growth solutions.
+                        </p>
+                    </div>
+                    <div class="footer-item-wrap">
+                        <p class="footer-text-soc">Social media</p>
+                        <ul class="footer-soc-list list">
+                            <li class="footer-soc-item">
+                                <a href="" class="footer-soc-link link"
+                                    ><svg
+                                        class="footer-soc-icon"
+                                        Width="24"
+                                        Height="24"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-instagram"
+                                        ></use></svg
+                                ></a>
+                            </li>
+                            <li class="footer-soc-item">
+                                <a href="" class="footer-soc-link link"
+                                    ><svg
+                                        class="footer-soc-icon"
+                                        Width="24"
+                                        Height="24"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-twitter"
+                                        ></use></svg
+                                ></a>
+                            </li>
+                            <li class="footer-soc-item">
+                                <a href="" class="footer-soc-link link"
+                                    ><svg
+                                        class="footer-soc-icon"
+                                        Width="24"
+                                        Height="24"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-facebook"
+                                        ></use></svg
+                                ></a>
+                            </li>
+                            <li class="footer-soc-item">
+                                <a href="" class="footer-soc-link link"
+                                    ><svg
+                                        class="footer-soc-icon"
+                                        Width="24"
+                                        Height="24"
+                                    >
+                                        <use
+                                            href="./images/icons.svg#icon-linkedin"
+                                        ></use></svg
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- footer_form -->
                 <div class="footer-form-wrapper">
@@ -630,18 +737,23 @@
                                 placeholder="E-mail"
                             />
                         </label>
-                        <button type="submit" class="footer-form-submit btn">
-                            Subscribe
-                            <svg
-                                class="footer-button-icon"
-                                Width="24"
-                                Height="24"
+                        <div class="wrap-btn">
+                            <button
+                                type="submit"
+                                class="footer-form-submit btn"
                             >
-                                <use
-                                    href="./images/icons.svg#icon-Telgram"
-                                ></use>
-                            </svg>
-                        </button>
+                                Subscribe
+                                <svg
+                                    class="footer-button-icon"
+                                    Width="24"
+                                    Height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-Telgram"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -751,6 +863,8 @@
                 </form>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
-    </body>
+        <script src="./js/modal.js" type="module"></script>
+        <script src="./js/mobile.js" type="module"></script>
+        <!-- <script defer src="js/mobile-menu.js"></script>
+    </body> -->
 </html>
