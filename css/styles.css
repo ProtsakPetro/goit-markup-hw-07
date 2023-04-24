@@ -105,7 +105,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    /* border-bottom: 1px solid var(--line-color); */
+    border-bottom: 1px solid var(--line-color);
 }
 .logo-header {
     width: 100%;
@@ -402,21 +402,6 @@ body {
     display: none;
 }
 
-/* .product-list {
-    display: flex;
-    flex-basis: calc(100% / 3);
-    gap: 24px;
-}
-
-.product-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--text-color);
-    margin-bottom: 72px;
-} */
 /* !!!!!!!!!!!!!!SECTION FOUR !!!!!!!!!!!!*/
 .team {
     background-color: var(--background-section-four);
@@ -582,7 +567,6 @@ body {
 .container-logo {
     display: block;
     margin-bottom: 72px;
-    /* justify-content: center; */
 }
 
 .footer-text {
@@ -724,11 +708,10 @@ body {
 .footer-button-icon {
     margin-left: 16px;
 }
-/* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
+/* ?    PORTFOLIO ???????????????????????????????????????????????????*/
 /* *filter* */
 .filter {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding: 48px 0 48px 0;
 }
 .btn-filter {
     font-family: "Roboto", sans-serif;
@@ -763,10 +746,11 @@ body {
     border-radius: 4px;
 }
 .portfolio-list {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     display: flex;
-    gap: 24px;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px 10px;
+    justify-content: baseline;
 }
 /* ?images list */
 .filter-title {
@@ -786,13 +770,16 @@ body {
 .picture-list {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
-    column-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
+
 .picture-portfolio {
     width: 360px;
     height: 300px;
 }
+
 .portfolio-picture-text {
     border: 1px solid var(--line-color);
     border-top: none;
@@ -803,15 +790,19 @@ body {
 }
 .picture-item {
     display: block;
+    /* margin-bottom: 48px; */
     transition: box-shadow var(--transition-time-cubic);
 }
+
+/* .picture-item:not(:last-child) {
+    margin-bottom: 48px;
+} */
+
 .picture-item:hover,
 .picture-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! overlay */
 .picture-list-wrapper {
     position: relative;
     overflow: hidden;
