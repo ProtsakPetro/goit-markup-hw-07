@@ -5,6 +5,18 @@
         margin-left: auto;
     }
 
+    .mobile-list {
+        font-size: 36px;
+    }
+
+    .phone {
+        font-size: 36px;
+    }
+
+    .mobile-team-soc-list {
+        gap: 56px;
+    }
+
     /** hero */
 
     .hero {
@@ -90,6 +102,12 @@
                 url(../images/background-image-hero-2x.jpg);
         }
     }
+
+    .hero-title {
+        font-size: 56px;
+        width: 496px;
+    }
+
     /********************  SECTION TWO */
     .second-title {
         text-align: left;
