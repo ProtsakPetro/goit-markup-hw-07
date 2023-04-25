@@ -59,6 +59,11 @@
         transition: background-color var(--transition-time-cubic);
     }
 
+    .modal {
+        width: 392px;
+        min-height: 586px;
+    }
+
     /* ?    PORTFOLIO ???????????????????????????????????????????????????*/
     .portfolio-list {
         margin-bottom: 48px;
@@ -120,6 +125,10 @@
     .hero-title {
         font-size: 56px;
         width: 496px;
+    }
+
+    .modal {
+        width: 408px;
     }
 
     /********************  SECTION TWO */
@@ -301,6 +310,10 @@
         margin: 0 auto;
     }
 
+    .modal {
+        min-height: 584px;
+    }
+
     /********************  SECTION TWO */
 
     .feature {
@@ -458,64 +471,18 @@
     /**!FOOTER**/
 
     .footer {
-        background-color: var(--background-color-darck);
         padding-top: 100px;
         padding-bottom: 132px;
     }
 
-    .logo-white {
-        font-family: "Raleway", sans-serif;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        color: var(--text-color-light-cloud);
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-    }
     .footer-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--background-section-four);
         width: 264px;
         margin-top: 16px;
-    }
-
-    .footer-text-soc {
-        font-family: "Roboto";
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        color: var(--text-hero);
-        margin-bottom: 16px;
     }
 
     .footer-soc-list {
         display: flex;
         gap: 16px;
-    }
-
-    .footer-soc-item {
-        width: 40px;
-        height: 40px;
-    }
-
-    .footer-soc-link {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: var(--logo-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color var(--transition-time-cubic);
-    }
-
-    .footer-soc-link:hover,
-    .footer-soc-link:focus,
-    .footer-soc-link:active {
-        background-color: #31d0aa;
     }
 
     .container-logo {
@@ -532,81 +499,29 @@
 
     /* ************************************************foter form */
 
-    .footer-form-wrapper {
+    .footer-form {
+        display: flex;
+        padding-left: unset;
         margin-left: 80px;
     }
 
-    .footer-form {
-        display: flex;
-    }
-
     .footer-header-form {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        color: var(--text-hero);
-        margin-bottom: 16px;
         text-align: unset;
     }
 
     .footer-form-input {
-        color: var(--text-hero);
         width: 264px;
-        height: 40px;
-        background-color: var(--background-color-darck);
-        border: 1px solid #ffffff;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
         padding-top: 8px;
         padding-bottom: 8px;
-        padding-left: 16px;
-        transition: outline border border-radius var(--transition-time-cubic);
-    }
-
-    .footer-form-input:hover,
-    .footer-form-input:focus,
-    .footer-form-input:active {
-        outline: none;
-        border: 1px solid var(--accent-color);
-        border-radius: 4px;
     }
 
     .footer-form-submit {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: var(--text-hero);
-        width: 165px;
-        height: 40px;
-        background: var(--logo-color);
-        border-radius: 4px;
-        border: none;
-        padding-top: 8px;
-        padding-right: 24px;
-        padding-bottom: 8px;
         padding-left: 24px;
-        margin-left: 24px;
-        transition: var(--transition-time-cubic);
+        margin-left: 0;
     }
 
-    .footer-form-submit:hover,
-    .footer-form-submit:active,
-    .footer-form-submit:focus {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: var(--text-hero);
-        background-color: var(--accent-color);
-    }
-
-    .footer-button-icon {
-        margin-left: 16px;
+    .footer-item-wrap {
+        margin-left: 0;
     }
 
     .wrap-btn {
@@ -614,6 +529,7 @@
         justify-content: unset;
         align-items: unset;
         margin-top: unset;
+        margin-left: 0;
     }
 
     /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
