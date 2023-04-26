@@ -65,13 +65,13 @@
     }
 
     /* ?    PORTFOLIO ???????????????????????????????????????????????????*/
-    .portfolio-list {
+    /* .portfolio-list {
         margin-bottom: 48px;
         display: flex;
         flex-wrap: wrap;
         gap: 24px 16px;
         justify-content: baseline;
-    }
+    } */
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!               TAB */
@@ -220,9 +220,10 @@
 }
 /* ?    PORTFOLIO ???????????????????????????????????????????????????*/
 
-.portfolio-list {
-    /* justify-content: center; не розумію чому воно пребиває і на попередньому медіаправилі */
-}
+/* .portfolio-list {
+    gap: 24px;
+    padding-left: 76px;
+} */
 
 .picture-item {
     max-width: 356px;
@@ -555,53 +556,22 @@
         padding-top: 96px;
         padding-bottom: 120px;
     }
-    .btn-filter {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        background-color: var(--color-cloud);
-        color: var(--logo-color);
-        border: none;
-        min-width: 69px;
-        padding: 12px 24px;
-        background: #f4f4fd;
-        border: 1px solid #e7e9fc;
-        border-radius: 4px;
-        transition: background-color var(--transition-time-cubic),
-            color var(--transition-time-cubic),
-            box-shadow var(--transition-time-cubic);
-    }
-    .btn-filter:hover,
-    .btn-filter:focus {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        background-color: var(--accent-color);
-        color: var(--text-hero);
-        padding: 12px 24px;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-    }
+
     .portfolio-list {
-        margin-bottom: 72px;
         display: flex;
         gap: 24px;
         justify-content: center;
+        margin-bottom: 72px;
     }
     /* ?images list */
-    .filter-title {
+    /* .filter-title {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--text-color);
         margin-bottom: 8px;
-    }
+    } */
     .filter-text {
         font-size: 16px;
         line-height: 1.5;
