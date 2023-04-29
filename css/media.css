@@ -193,6 +193,11 @@
 
     /* ?    PORTFOLIO ???????????????????????????????????????????????????*/
 
+    .filter {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
     .portfolio-list {
         gap: 24px;
         justify-content: center;
@@ -381,7 +386,6 @@
     /* ************************************************foter form */
 
     .footer-form {
-        /* display: flex; */
         padding-left: unset;
         margin-left: 80px;
     }
@@ -415,7 +419,7 @@
     /* !!!!!!!!!!!!!!!!!!!!!!page two portfolio!!!!!!! */
     /* *filter* */
     .filter {
-        padding-top: 96px;
+        padding-top: 100px;
         padding-bottom: 120px;
     }
 
