@@ -142,7 +142,9 @@
     }
 
     /**!FOOTER**/
-
+    .container-logo {
+        align-items: baseline;
+    }
     .logo-footer {
         text-align: left;
     }
@@ -154,19 +156,14 @@
         padding-left: 94px;
     }
 
+    .footer-text {
+        width: 264px;
+        padding: 0;
+        margin-right: 24px;
+    }
+
     .footer-text-soc {
         text-align: left;
-    }
-
-    .footer-item-wrap {
-        margin-left: 24px;
-        margin-bottom: 0;
-    }
-
-    .footer-header-form {
-        display: block;
-        text-align: left;
-        padding-left: 94px;
     }
 
     .footer-form {
@@ -180,19 +177,18 @@
         width: 264px;
     }
 
-    .footer-text {
-        width: 264px;
-        padding: 0;
-    }
-
     .footer-form-field {
         text-align: left;
         justify-content: center;
     }
 
     .wrap-btn {
-        display: flex;
         margin-top: unset;
+    }
+
+    .footer-header-form {
+        text-align: left;
+        padding-left: 94px;
     }
 
     /* ?    PORTFOLIO ???????????????????????????????????????????????????*/
@@ -200,6 +196,7 @@
     .portfolio-list {
         gap: 24px;
         justify-content: center;
+        margin-bottom: 64px;
     }
 
     .picture-list {
@@ -350,9 +347,6 @@
 
     /**!FOOTER**/
 
-    .wraper-tab {
-        margin-bottom: 0px;
-    }
     .footer {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -361,11 +355,7 @@
     .footer-text {
         width: 264px;
         margin-top: 16px;
-    }
-
-    .footer-soc-list {
-        display: flex;
-        gap: 16px;
+        margin-right: 0;
     }
 
     .container-logo {
@@ -391,13 +381,12 @@
     /* ************************************************foter form */
 
     .footer-form {
-        display: flex;
+        /* display: flex; */
         padding-left: unset;
         margin-left: 80px;
     }
 
     .footer-header-form {
-        text-align: left;
         padding-left: 78px;
     }
 
@@ -417,7 +406,6 @@
     }
 
     .wrap-btn {
-        display: flex;
         justify-content: unset;
         align-items: unset;
         margin-top: unset;
@@ -432,82 +420,11 @@
     }
 
     .portfolio-list {
-        display: flex;
-        gap: 24px;
-        justify-content: center;
         margin-bottom: 72px;
     }
     /* ?images list */
-    /* .filter-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--text-color);
-        margin-bottom: 8px;
-    } */
-    .filter-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--main-text-color);
-    }
-    .picture-list {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 48px;
-        column-gap: 24px;
-    }
-    .picture-portfolio {
-        width: 360px;
-        height: 300px;
-    }
-    .portfolio-picture-text {
-        border: 1px solid var(--line-color);
-        border-top: none;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        padding-left: 16px;
-        padding-right: 52px;
-    }
-    .picture-item {
-        display: block;
-        max-width: 360px;
-        transition: box-shadow var(--transition-time-cubic);
-    }
-    .picture-item:hover,
-    .picture-item:focus {
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
 
-    .picture-list-wrapper {
-        position: relative;
-        overflow: hidden;
-    }
-    .overlay {
-        display: block;
-        font-family: "Roboto";
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        background-color: var(--logo-color);
-        color: var(--text-color-light-cloud);
-        padding-top: 40px;
-        padding-bottom: 164px;
-        padding-left: 32px;
-        padding-right: 32px;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(0, 100%);
-        transition: transform var(--transition-time-cubic);
-    }
-    .picture-portfolio:focus .overlay,
-    .picture-portfolio:hover .overlay {
-        transform: translate(0, 0);
+    .picture-list {
+        gap: 48px 24px;
     }
 }
