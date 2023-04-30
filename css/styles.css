@@ -766,8 +766,8 @@ body {
 }
 
 .picture-portfolio {
-    width: 360px;
-    height: 300px;
+    width: 396px;
+    height: 280px;
 }
 
 .portfolio-picture-text {
@@ -780,7 +780,6 @@ body {
 }
 .picture-item {
     display: block;
-    /* margin-bottom: 48px; */
     transition: box-shadow var(--transition-time-cubic);
 }
 

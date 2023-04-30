@@ -204,8 +204,17 @@
         margin-bottom: 64px;
     }
 
+    .portfolio-picture-text {
+        width: 356px;
+    }
+
     .picture-list {
         gap: 72px 24px;
+    }
+
+    .picture-portfolio {
+        width: 356px;
+        height: 300px;
     }
 }
 /* ????????????????????????????????             DESCK */
@@ -430,5 +439,10 @@
 
     .picture-list {
         gap: 48px 24px;
+    }
+
+    .picture-portfolio {
+        width: 360px;
+        height: 300px;
     }
 }
